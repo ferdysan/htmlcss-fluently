@@ -73,7 +73,7 @@
 }
 
 /*nascondo il background del primo pulsante*/
-.login_button a:nth-child(2n){
+.login_button ul li:nth-of-type(2n) a{
   background-color: transparent;
   border: 1px solid #7BBC00;
 }
