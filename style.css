@@ -6,7 +6,13 @@
 
 .blue{
   background-color: #0C325A;
-  padding: 20px 30px;
+  padding: 40px 20px 0 20px;
+  position: relative;
+}
+
+.blue_header{
+  background-color: #0C325A;
+  padding: 20px 20px 0 20px
 }
 
 .container{
@@ -17,12 +23,24 @@
 
 .discover-us h1{
   font-size: 50px;
-  
+
+}
+
+.img-container{
+  background-image: url('img/uomini.png');
+  position: absolute;
+}
+
+.uomini{
+  position: absolute;
+  bottom:0;
+  width: 70%;
 }
 
 .col-2 ul li{
   display: inline-block;
   text-align: center;
+  line-height: 50px;
 }
 
 .col-2 ul li a{
@@ -37,20 +55,12 @@
   float: right;
 }
 
-
+/*stile bottoni di login*/
 .login_button a{
   text-decoration: none;
   font-weight: bold;
   color:white;
-}
-
-.button_border{
-  text-transform: uppercase;
-  text-decoration: none;
-  border:1px solid #7BBC00;
-  border-radius: 5px;
-  color: #fff;
-  padding: 5px;
+  line-height: 50px;
 }
 
 .button_green{
@@ -60,6 +70,12 @@
   border-radius: 5px;
   color: #fff;
   padding: 5px;
+}
+
+/*nascondo il background del primo pulsante*/
+.login_button a:nth-child(2n){
+  background-color: transparent;
+  border: 1px solid #7BBC00;
 }
 
 .login_button{
@@ -72,8 +88,7 @@ header::after{
   clear: both;
 }
 
-.after-header,
-.struct-plane {
+.after-header {
   background-color: #ecf0f1;
   padding: 40px 20px;
 }
@@ -83,97 +98,33 @@ header::after{
   display: table;
   content: '';
 }
-.three-cols hr {
-  margin: 60px auto;
-}
-.text-center {
-  text-align: center;
-}
+
 .col-2 {
   width: 50%;
   float: left;
 }
-.col-3 {
-  width:33.33%;
-  float: left;
-  padding: 20px;
-}
-.three-cols {
-  padding: 20px;
-}
-.three-cols .col-3 img {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 40px;
-}
-.three-cols .col-3 hr {
-  width: 10%;
-  margin: 20px auto;
-}
+
 .col-2-img {
   width: 70%;
   margin-left: 20%;
 }
-.center-vert {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-.center-vert .text-cnt {
-  width: 80%;
-  margin: 0 0 0 auto;
-}
-.text-cnt h1 {
-  line-height: 40px;
-}
-.text-cnt p,
+
 .discover-us p,
 .structure p {
   margin: 20px 0px;
 }
-.text-right {
-  text-align: right;
-}
-.struct-plane .col-2 h1 {
-  margin-left: 10%;
-}
-.link-plane {
-  background-color: #7BBC00;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-.blue, .faq {
+
+
+.blue{
   background-color: #0C325A;
 }
+
 .height-400 {
   height: 400px;
   position: relative;
 }
-.blue .text-cnt {
-  width: 70%;
-  margin-left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-}
-.blue .text-cnt h1 span,
-.padding-shakehands .contact-us h1 span,
-.faq span {
-  color: #f1c40f;
-}
-.pc-img {
-  width: 100%;
-}
 
-img.shakehands {
-  width: 100%;
-  margin: 0;
-}
-
+/*Stile bottoni interni alla pagina*/
 a.green-link,
 .discover-us a {
   text-transform: uppercase;
@@ -189,64 +140,47 @@ a.green-link,
   margin:20px auto;
 }
 
-.padding-shakehands {
-  padding: 60px 30px;
+/* allinea testo al centro*/
+
+.text-center{
+  text-align: center;
 }
+
 .col-1 {
   width: 100%;
   float: left;
 }
-.contact-us {
-  width: 45%;
-  margin: 0 auto;
-}
-.contact-us .margin-10 {
-  margin: 10px 0px;
-}
+
 .discover-us {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
   color: #fff;
 }
-.structure {
-  padding: 40px 20px;
-}
-.structure > .container > .col-3 > img {
-  width: 10%;
-  margin: 0 auto 0 0;
+
+/*CODICE SEZIONE A TRE COLONNE*/
+.col-3{
+  float:left;
+  width: calc(100% / 3);
+  padding:20px;
 }
 
-.structure > .container > .col-3 > hr {
-  border: 4px solid #e67e22;
-  margin-bottom: 20px;
+.colonne-3{
+  padding: 20px;
 }
-.structure > .container > .col-3 > a {
-  color: #e67e22;
-}
-.structure .m-bottom {
+
+.colonne-3 .col-3 img{
+  width: 100%;
   margin-bottom: 40px;
+  height: 200px;
 }
-.structure > .container {
-  width: 60%;
+
+.colonne-3 .col-3 hr{
+  margin: 20px auto;
+  width: 10%;
 }
-.faq {
-  padding: 40px 20px;
-}
-footer {
-  background-color: #34495e;
-  color: #fff;
-  padding: 60px 30px;
-}
-footer a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  margin-top: 10px;
-}
-footer h3 span {
-  text-transform: uppercase;
-}
-footer h3 {
-  margin-bottom: 20px;
+
+/* per allineare le colonne do un min-heigth all'h2*/
+.colonne-3 .col-3 h2{
+  min-height: 40px;
 }
