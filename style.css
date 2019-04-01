@@ -15,15 +15,21 @@
   padding: 20px 20px 0 20px
 }
 
+/* allineo logo a sinistra */
+.logo{
+  float: left;
+  margin-right: 10px;
+}
+
 .container{
   width:70%;
   margin: 0 auto;
   position: relative;
+  padding:20px 20px;
 }
 
-.discover-us h1{
+.allinea-vert h1{
   font-size: 50px;
-
 }
 
 .img-container{
@@ -34,7 +40,7 @@
 .uomini{
   position: absolute;
   bottom:0;
-  width: 70%;
+  width: 60%;
 }
 
 .col-2 ul li{
@@ -51,10 +57,6 @@
   padding: 5px;
 }
 
-.col-2 nav{
-  float: right;
-}
-
 /*stile bottoni di login*/
 .login_button a{
   text-decoration: none;
@@ -63,6 +65,7 @@
   line-height: 50px;
 }
 
+/*stile dei pulsanti di login*/
 .button_green{
   text-transform: uppercase;
   text-decoration: none;
@@ -109,11 +112,11 @@ header::after{
   margin-left: 20%;
 }
 
-.discover-us p,
-.structure p {
+.allinea-vert p,
+.structure p,
+.colonne-small p {
   margin: 20px 0px;
 }
-
 
 .blue{
   background-color: #0C325A;
@@ -125,8 +128,7 @@ header::after{
 }
 
 /*Stile bottoni interni alla pagina*/
-a.green-link,
-.discover-us a {
+.green-link {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #7BBC00;
@@ -136,7 +138,7 @@ a.green-link,
   display: inline-block;
 }
 
-.discover-us a {
+.allinea-vert a {
   margin:20px auto;
 }
 
@@ -151,11 +153,18 @@ a.green-link,
   float: left;
 }
 
-.discover-us {
+.allinea-vert,
+.livello_iniziale,
+.piano a,
+.copy{
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  color: #fff;
+}
+
+/*definisco colore bianco al contenuto slider*/
+.allinea-vert{
+  color: white;
 }
 
 /*CODICE SEZIONE A TRE COLONNE*/
@@ -165,8 +174,10 @@ a.green-link,
   padding:20px;
 }
 
-.colonne-3{
-  padding: 20px;
+.colonne-3,
+.colonne-2,
+.colonne-1{
+  padding: 30px;
 }
 
 .colonne-3 .col-3 img{
@@ -183,4 +194,96 @@ a.green-link,
 /* per allineare le colonne do un min-heigth all'h2*/
 .colonne-3 .col-3 h2{
   min-height: 40px;
+}
+
+.colonne-3 hr,
+.colonne-1 hr{
+  margin: 30px auto;
+}
+
+/* setto dimensioni immagine scalatore centrale */
+.scalatore img{
+  width: 50%;
+  margin-left: 27%;
+}
+
+.piano{
+  width: 50%;
+  float: right;
+}
+
+.pc-img img{
+  width: 100%;
+}
+
+.phone-img{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.livello_iniziale{
+  padding:20px 90px;
+}
+
+.studio-inglese{
+ padding: 0 43px 0px 158px;
+}
+
+.colonne-small img{
+  width: 10%;
+}
+
+.colonne-small{
+  padding: 80px 150px 80px 150px;
+}
+
+.green,
+.yellow,
+.lightblue{
+  margin: 10px 0px 10px 0;
+  height: 8px;
+}
+
+.colonne-small p{
+  min-height: 50px;
+}
+
+hr.lightblue{
+  background-color: #98c8f8;
+}
+
+a.lightblue{
+  color:#98c8f8;
+}
+
+hr.yellow{
+  background-color: #f8b71c;
+}
+
+a.yellow{
+  color:#f8b71c;
+}
+
+hr.green{
+  background-color: #7fb802;
+}
+
+a.green{
+  color: #7fb802;
+}
+
+footer{
+  background-color:#16406B;
+}
+
+.menu-footer ul li{
+  display:block;
+  text-align: left;
+}
+
+.menu-footer ul li a{
+  color: #839EB4;
+  text-decoration: underline;
+  margin:0;
+  padding:0;
 }
